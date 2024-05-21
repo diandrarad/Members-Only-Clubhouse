@@ -23,6 +23,9 @@ build/
 tmp/
 temp/
 
+# Public directory
+/public/css/tailwind.css
+
 # VSCode settings
 .vscode/
 
