@@ -6,9 +6,9 @@ This project is an exclusive clubhouse where members can write anonymous posts. 
 
 - User sign-up and login with Passport.js
 - Membership status management
-- Ability for members to create anonymous posts
-- Only logged-in users can see the author's name and post date
-- Admin functionality to delete posts
+- Ability for logged-in users to create anonymous posts
+- Only members can see the author's name and post date
+- Admin functionality to delete and edit posts
 
 ## Technologies Used
 
