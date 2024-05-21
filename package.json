@@ -7,7 +7,8 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "build:css": "npx tailwindcss -i ./public/css/styles.css -o ./public/css/tailwind.css --watch",
     "dev": "nodemon app.js",
-    "build": "npx tailwindcss -i ./public/css/styles.css -o ./public/css/tailwind.css"
+    "build": "npx tailwindcss -i ./public/css/styles.css -o ./public/css/tailwind.css",
+    "start": "node app.js"
   },
   "keywords": [],
   "author": "",
