@@ -1,0 +1,32 @@
+<!-- views/signup.ejs -->
+<%- include('header') %>
+  <form action="/signup" method="post">
+    <div class="mb-4">
+      <label class="block text-gray-700">First Name:</label>
+      <input type="text" name="firstName" class="mt-1 p-2 w-full border rounded" required>
+    </div>
+    <div class="mb-4">
+      <label class="block text-gray-700">Last Name:</label>
+      <input type="text" name="lastName" class="mt-1 p-2 w-full border rounded" required>
+    </div>
+    <div class="mb-4">
+      <label class="block text-gray-700">Email:</label>
+      <input type="email" name="email" class="mt-1 p-2 w-full border rounded" required>
+    </div>
+    <div class="mb-4">
+      <label class="block text-gray-700">Password:</label>
+      <input type="password" name="password" class="mt-1 p-2 w-full border rounded" required>
+    </div>
+    <div class="mb-4">
+      <label class="block text-gray-700">Confirm Password:</label>
+      <input type="password" name="confirmPassword" class="mt-1 p-2 w-full border rounded" required>
+    </div>
+    <button type="submit" class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-700">Sign Up</button>
+  </form>
+  <% if (errors && errors.length > 0) { %>
+    <ul class="mt-4 text-red-600">
+      <% errors.forEach(error => { %>
+        <li><%= error.msg %></li>
+      <% }) %>
+    </ul>
+  <% } %>

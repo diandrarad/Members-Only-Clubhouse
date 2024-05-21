@@ -1,0 +1,17 @@
+<%- include('header') %>
+  <form action="/admin" method="post">
+    <div class="mb-4">
+      <label class="block text-gray-700">Admin Passcode:
+        <input class="mt-1 p-2 w-full border rounded" type="password" name="passcode" required>
+      </label>
+    </div>
+    <button class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-700" type="submit">Become Admin</button>
+  </form>
+  <% if (errors && errors.length > 0) { %>
+    <ul>
+      <% errors.forEach(error => { %>
+        <li><%= error.msg %></li>
+      <% }) %>
+    </ul>
+  <% } %>
+  <%- include('footer') %>

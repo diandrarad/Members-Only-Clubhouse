@@ -1,0 +1,40 @@
+# Node modules
+node_modules/
+
+# Logs
+logs
+*.log
+npm-debug.log*
+
+# Environment variable files
+.env
+
+# npm cache
+.npm
+
+# eslint cache
+.eslintcache
+
+# Dist directory
+dist/
+
+# Build directories
+build/
+tmp/
+temp/
+
+# VSCode settings
+.vscode/
+
+# Optional npm cache directory
+.npm
+
+# Optional REPL history
+.node_repl_history
+
+# Parcel-bundler cache (https://parceljs.org/)
+.cache
+.parcel-cache
+
+# Gatsby files
+.cache/

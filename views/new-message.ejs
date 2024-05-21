@@ -1,0 +1,19 @@
+<!-- views/new-message.ejs -->
+<%- include('header') %>
+  <form action="/new-message" method="post">
+    <div class="mb-4">
+      <label class="block text-gray-700">Title: <input class="mt-1 p-2 w-full border rounded" type="text" name="title" required></label>
+    </div>
+    <div class="mb-4">
+      <label class="block text-gray-700">Text: <textarea class="mt-1 p-2 w-full border rounded" name="text" required></textarea>
+    </div>
+    <button type="submit" class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-700">Create Message</button>
+  </form>
+  <% if (errors && errors.length > 0) { %>
+    <ul>
+      <% errors.forEach(error => { %>
+        <li><%= error.msg %></li>
+      <% }) %>
+    </ul>
+  <% } %>
+  <%- include('footer') %>
