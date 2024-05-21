@@ -2,13 +2,13 @@
   "name": "exclusive-clubhouse",
   "version": "1.0.0",
   "description": "",
-  "main": "app.js",
+  "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build:css": "npx tailwindcss -i ./public/css/styles.css -o ./public/css/tailwind.css --watch",
-    "dev": "nodemon app.js",
+    "dev": "nodemon index.js",
     "build": "npx tailwindcss -i ./public/css/styles.css -o ./public/css/tailwind.css",
-    "start": "node app.js"
+    "start": "node index.js"
   },
   "keywords": [],
   "author": "",
